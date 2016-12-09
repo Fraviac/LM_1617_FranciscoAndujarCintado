@@ -1,0 +1,5 @@
+﻿¿Por qué los últimos 5 párrafos se muestran de forma diferente que los 2 primeros?
+ 
+- Porque los últimos 5 párrafos no se encuentran dentro de la clase "verse". 
+ 
+- Se le añade la clase "verse" a los párrafos que no lo tienen y se verán todos igual.

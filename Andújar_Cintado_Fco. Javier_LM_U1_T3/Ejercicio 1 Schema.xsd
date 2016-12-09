@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ elementFormDefault="qualified"> 
+ 
+ <xsd:element name="persons">
+ <xsd:complexType>
+ <xsd:sequence>
+ <xsd:element ref="member-name"/>
+ <xsd:element ref="years-of-membership"/>
+ </xsd:sequence>
+ </xsd:complexType>
+ </xsd:element> 
+ 
+ <xsd:element name="member-name">
+ <xsd:complexType>
+ <xsd:sequence>
+ <xsd:element ref="member" minOccurs="1" maxOccurs="3"/>
+ </xsd:sequence>
+ </xsd:complexType>
+ </xsd:element>
+    
+<xsd:element name="years-of-membership">
+ <xsd:complexType>
+ <xsd:sequence>
+ <xsd:element ref="year" minOccurs="1" maxOccurs="3"/>
+ </xsd:sequence>
+ </xsd:complexType>
+ </xsd:element> 
+ 
+ <xsd:element name="member" type="xsd:string"/>
+ <xsd:element name="year" type="xsd:string"/>
+</xsd:schema> 

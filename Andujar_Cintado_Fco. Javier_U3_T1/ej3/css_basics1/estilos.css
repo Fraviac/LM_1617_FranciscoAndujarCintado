@@ -1,0 +1,34 @@
+/* This is a comment */
+/* Style Sheet for Jaberwocky Tutorial */
+
+/* Body */
+body {background-color: aqua}
+
+/* Headers */
+h1 {color:green; 
+	font-size:20pt}
+
+/* HR (Hard Rule = line) */
+hr {color:olive}
+
+/* Paragraphs */
+p {font-size:12pt; 
+	margin-left: 15px}
+p.verse {color:yellow; 
+		 margin-left: 60px}
+
+/* Divs */
+
+/* Links */
+a:link     {color:teal}
+a:visited  {color:red}
+a:hover    {color:purple}
+a:active   {color:silver}
+
+/* Navigation */
+
+/* Classes used by all html elements */
+
+/* Ids */
+
+
