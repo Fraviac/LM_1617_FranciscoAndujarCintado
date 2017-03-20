@@ -1,0 +1,21 @@
+body {
+    background-color: #BCBCBC;
+}
+#container {
+  width: 800px;
+  height: 480px;
+  margin: 30px auto;
+  overflow:hidden;
+}
+#container h1 {
+  text-align: center;
+  font-size: 35px;
+}
+ul,li {
+   padding:0px;
+   margin:0px;
+}
+li {
+   float:left;
+   list-style:none;
+}

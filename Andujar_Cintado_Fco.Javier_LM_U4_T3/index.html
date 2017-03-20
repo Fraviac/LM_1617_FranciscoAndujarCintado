@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Template</title>
+	<link rel="stylesheet" href="./style.css">
+	<!-- Loading jQUery Script -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div id="container">
+	
+    <h1>Componentes de un equipo</h1>
+
+    <div class="acordeon-container">
+        <a href="#" class="acordeon-titulo">Procesador</a>
+        <div class="acordeon-contenido">
+            <img src="imagenes/intel.jpg" alt=""/>
+            <p>El microprocesador (o simplemente procesador) es el circuito
+				integrado central más complejo de un sistema informático; a
+				modo de ilustración, se le suele llamar por analogía el
+				«cerebro» de un computador.
+				Es el encargado de ejecutar los programas, desde el sistema
+				operativo hasta las aplicaciones de usuario; sólo ejecuta
+				instrucciones programadas en lenguaje de bajo nivel,
+				realizando operaciones aritméticas y lógicas simples,
+				tales como sumar, restar, multiplicar, dividir, las lógicas
+				binarias y accesos a memoria.</p>
+        </div>
+    </div>
+	
+    <div class="acordeon-container">
+        <a href="#" class="acordeon-titulo">Placa base</a>
+        <div class="acordeon-contenido">
+            <img src="imagenes/tarjetamadre.jpg" alt=""/>
+            <p>La placa base, también conocida como placa madre o placa
+				principal (motherboard o mainboard en inglés), es una
+				tarjeta de circuito impreso a la que se conectan los
+				componentes que constituyen la computadora.
+				Es una parte fundamental para montar cualquier computadora
+				personal de escritorio o portátil. Tiene instalados una
+				serie de circuitos integrados, entre los que se encuentra
+				el circuito integrado auxiliar (chipset), que sirve como
+				centro de conexión entre el microprocesador (CPU), la
+				memoria de acceso aleatorio (RAM), las ranuras de expansión
+				y otros dispositivos.</p>
+        </div>
+    </div>
+	
+		<div class="acordeon-container">
+        <a href="#" class="acordeon-titulo">Memoria RAM</a>
+        <div class="acordeon-contenido">
+            <img src="imagenes/memoriaRAM.jpg" alt=""/>
+            <p>La memoria de acceso aleatorio (Random Access Memory, RAM)
+				se utiliza como memoria de trabajo de computadoras para el
+				sistema operativo, los programas y la mayor parte del software.
+				En la RAM se cargan todas las instrucciones que ejecuta la unidad central 
+				de procesamiento (procesador) y otras unidades del computador.
+				Se denominan «de acceso aleatorio» porque se puede leer o
+				escribir en una posición de memoria con un tiempo de espera
+				igual para cualquier posición, no siendo necesario seguir
+				un orden para acceder (acceso secuencial) a la información
+				de la manera más rápida posible.</p>
+        </div>
+    </div>
+	
+		<div class="acordeon-container">
+        <a href="#" class="acordeon-titulo">Fuente de alimentación</a>
+        <div class="acordeon-contenido">
+            <img src="imagenes/fuentealimentacion.jpg" alt=""/>
+            <p>En electrónica, la fuente de alimentación o fuente de poder
+				es el dispositivo que convierte la corriente alterna (CA),
+				en una o varias corrientes continuas (CC), que alimentan los
+				distintos circuitos del aparato electrónico al que se conecta
+				(computadora, televisor, impresora, router, etc.).</p>
+        </div>
+    </div>
+	
+		<div class="acordeon-container">
+        <a href="#" class="acordeon-titulo">Tarjeta gráfica</a>
+        <div class="acordeon-contenido">
+            <img src="imagenes/tarjetagrafica.jpg" alt=""/>
+            <p>Una tarjeta gráfica es una tarjeta de expansión o un
+				circuito integrado (chip), de la placa base del ordenador,
+				que se encarga de procesar los datos provenientes de la
+				unidad central de procesamiento (CPU) y transformarlos en
+				información comprensible y representable en el dispositivo
+				de salida (por ejemplo: monitor, televisor o proyector).</p>
+        </div>
+    </div>
+	
+</div>
+
+	<script>
+		$(".acordeon-titulo").click(function(){
+
+			var contenido=$(this).next(".acordeon-contenido");
+
+			if(contenido.css("display")=="none"){ //abrir
+			contenido.slideDown(250);
+			$(this).addClass("abrir");
+			}
+			else{ //cerrar
+			contenido.slideUp(250);
+			$(this).removeClass("abrir");
+			}
+
+		});
+	</script>
+</body>
+</html>
