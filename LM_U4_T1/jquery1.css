@@ -1,0 +1,19 @@
+.cabecera {
+	background-color: black;
+	color: white;
+}
+
+.encabezado {
+	background-color: red;
+	color: white;
+}
+
+.impares {
+	background-color: #C7C4C4;
+	color: black;
+}
+
+.pares {
+	background-color: #696565;
+	color: white;
+}

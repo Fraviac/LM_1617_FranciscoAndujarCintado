@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Template</title>
+	<!-- Loading jQUery Script -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<link rel="stylesheet" href="jquery1.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+</head>
+<body>
+	
+	<h1>jQuery Template</h1>
+	
+<table border=1>
+		<thead>
+			<tr>
+				<th>HORAS</th>
+				<th>Lunes</th>
+				<th>Martes</th>
+				<th>Miercoles</th>
+				<th>Jueves</th>
+				<th>Viernes</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>8:15-9:15</th>
+				<td>LMSGI</td>
+				<td>FOL</td>
+				<td>LMSGI</td>
+				<td>PLDRE</td>
+				<td>GBDIN</td>
+			</tr>
+			<tr>
+				<th>9:15-10:15</th>
+				<td>LMSGI</td>
+				<td>PLDRE</td>
+				<td>LMSGI</td>
+				<td>PLDRE</td>
+				<td>GBDIN</td>
+			</tr>
+			<tr>
+				<th>10:15-11:15</th>
+				<td>FOL</td>
+				<td>PLDRE</td>
+				<td>FOL</td>
+				<td>PLDRE</td>
+				<td>GBDIN</td>
+			</tr>
+			<tr>
+				<th>11:15-11:45</th>
+				<th colspan=5>RECREO</th>
+			</tr>
+			<tr>
+				<th>11:45-12:45</th>
+				<td>GBDIN</td>
+				<td>PLDRE</td>
+				<td>INSINF</td>
+				<td>ISOAP</td>
+				<td>FHADW</td>
+			</tr>
+			<tr>
+				<th>12:45-13:45</th>
+				<td>GBDIN</td>
+				<td>ISINF</td>
+				<td>ISINF</td>
+				<td>ISINF</td>
+				<td>FHADW</td>
+			</tr>
+			<tr>
+				<th>13:45-14:45</th>
+				<td>GBDIN</td>
+				<td>ISINF</td>
+				<td>ISINF</td>
+				<td>ISINF</td>
+				<td>FHADW</td>
+			</tr>
+		</tbody>
+	</table>
+	<br/>
+	<table border=1 id="alumnos">
+		<tr>
+			<th>Nombre</th>
+			<th>Apellidos</th>
+		</tr>
+		<tr>
+			<td>Pepito</td>
+			<td>Perez Sanchez</td>
+		</tr>
+		<tr>
+			<td>Manolito</td>
+			<td>Guzman Rodriguez</td>
+		</tr>
+		<tr>
+			<td>Marco</td>
+			<td>Borreguero Trigueros</td>
+		</tr>
+		<tr>
+			<td>Alfonso</td>
+			<td>Espinaco Gulliban</td>
+		</tr>
+		<tr>
+			<td>Miguel</td>
+			<td>Caro Palacio</td>
+		</tr>
+		<tr>
+			<td>Maria Luisa</td>
+			<td>Rodriguez Sanchez</td>
+		</tr>
+		<tr>
+			<td>Emilio</td>
+			<td>Abril Acero</td>
+		</tr>
+		<tr>
+			<td>Maria</td>
+			<td>Gallego Acedo</td>
+		</tr>
+		<tr>
+			<td>Antonio</td>
+			<td>Castellano Badía</td>
+		</tr>
+		<tr>
+			<td>Fco. Javier</td>
+			<td>Andújar Cintado</td>
+		</tr>
+	</table>
+	<p>Este es el primer párrafo de prueba</p>
+	<p>Este es el segundo párrafo de prueba</p>
+	<p>Este es el tercer párrafo de prueba</p>
+	<p>Este es el cuarto párrafo de prueba</p>
+	<script>
+	  //Function executed when the HTML document is Ready (full loaded)	
+	  $(function() {
+
+			$("h1").addClass("cabecera");
+		  	$("thead").css({"background-color": "red", 
+							"color": "white"});
+    		$("#alumnos tr:odd").addClass("impares"); // filas impares
+    		$("#alumnos tr:even").addClass("pares"); // filas pares
+			$("p").hide();
+		  	$("p:last").show(2000);
+	  });
+	</script>
+</body>
+</html>
